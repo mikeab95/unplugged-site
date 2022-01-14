@@ -294,6 +294,11 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .contact-content{
+    justify-content: center;
+    align-items: center;
+  }
+
 /* ==========================================================================
    FAQ
    ========================================================================== */
@@ -501,8 +506,9 @@ textarea {
     
   }
 
-  /***** About Page *****/
-
+  /* ==========================================================================
+   About
+   ========================================================================== */
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -524,7 +530,9 @@ textarea {
     width: 50%;
   }
 
-  /***** FAQ Page *****/
+  /* ==========================================================================
+   FAQ
+   ========================================================================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -543,6 +551,57 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   /***** Desktop Styles *****/
+  .content-wrapper {
+    max-width: 980px;
+  }
+
+  /***** Aside *****/
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 27%
+  }
+
+  /***** Features *****/
+
+  .features h2 {
+    width: 73%;
+  }
+
+  .features article {
+    flex-basis: 30%;
+  }
+
+  .features .features-item-description{
+    width: 50%;
+  }
+
+  /***** Reviews *****/
+
+  .reviews article div {
+    width: 40%;
+  }
+
+/* ==========================================================================
+   About
+   ========================================================================== */  
+
+  .mission h2,
+   .contact-section .content-wrapper h2 {
+     width: 100%;
+   }
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+
+  .faq h2 {
+    width: 100%;
+  }
 
 }
 
