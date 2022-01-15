@@ -133,7 +133,7 @@ textarea {
   }
 
   p {
-    line-height: 1.2em;
+    line-height: 1.5em;
     font-size: 1em;
     color: #e2e3ed;
   }
@@ -143,9 +143,10 @@ textarea {
   }
 
   .content-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 50px 0;
-    
+    padding: 0px 20px;
+    box-sizing: border-box;
   }
  
   /*****----- Base Header - Footer -----*****/
@@ -164,17 +165,28 @@ textarea {
     padding: 15px 0;
   }
 
+  header a {
+    max-width: 60%;
+  }
+
+  img {
+    width: 100%;
+  }
+
   header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+    padding: 0;
   }
 
   .header-divider {
     width: 100%;
-    margin: 10px 0px 20px 0px
+    margin-top: 10px;
+    border-bottom: 1px solid #e2e3ed;
+    padding: 0;
   }
 
   header nav {
@@ -189,6 +201,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 10px;
   }
 
   /***** Footer *****/
@@ -206,11 +219,12 @@ textarea {
   }
 
   .footer-content {
-    
+    text-align: center;
   }
 
   footer p {
     margin: 0;
+    font-weight: 400;
   }
   
 
@@ -240,6 +254,10 @@ textarea {
    Homepage
    ========================================================================== */
 
+  body {
+    background-color: #202322;
+  }
+
   .hero-area {
     display: flex;
     justify-content: center;
@@ -264,12 +282,37 @@ textarea {
     flex-flow: row wrap;
   }
 
-  .form-description {
-    
+  aside .content-wrapper {
+    background-color: #527158;
+    padding-bottom: 50px;
+    padding-top: 10px;
   }
 
-  .form {
-    
+  aside .form {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   /***** Features *****/
@@ -293,7 +336,7 @@ textarea {
   }
 
   .features article {
-    width: 63%;
+    width: 60%;
     margin: 30px 0;
   }
 
@@ -313,7 +356,8 @@ textarea {
   }
 
   .features-item-description {
-
+    text-align: center;
+    width: 85%;
   }
 
   /***** Reviews *****/
