@@ -87,12 +87,68 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  .content-wrapper{
+  /*****----- General Styles -----*****/
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    color: #e2e3ed;
+    font-weight: 400;
+  }
+
+  h3,
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #e2e3ed;
+    font-weight: 400;
+  }
+
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+  }
+
+  li,
+  ol,
+  ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 0;
+  }
+
+  p {
+    line-height: 1.2em;
+    font-size: 1em;
+    color: #e2e3ed;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .content-wrapper {
     width: 90%;
     margin: 50px 0;
     
   }
-   /*****----- Base Header - Footer -----*****/
+ 
+  /*****----- Base Header - Footer -----*****/
 
   header,
   footer {
@@ -192,9 +248,11 @@ textarea {
 
   main .content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    margin-top: 0;
+    margin-bottom: 280px;
   }
 
 /***** Aside *****/
@@ -292,11 +350,6 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  }
-
-  .contact-content{
-    justify-content: center;
-    align-items: center;
   }
 
 /* ==========================================================================
