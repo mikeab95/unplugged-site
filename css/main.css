@@ -229,7 +229,6 @@ textarea {
     font-weight: 400;
   }
   
-
   .contact {
     margin-bottom: 50px;
   }
@@ -244,6 +243,16 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: space-around;
+  }
+
+  .social-icons p {
+    margin: .5em;
+    width: 1.2em;
+    height: auto;
+    border: 1px #527158 solid;
+    border-radius: 50%;
+    padding: .6em;
+    background-color: #527158;
   }
 
   .copyright {
@@ -360,6 +369,7 @@ textarea {
   .features article {
     width: 60%;
     margin: 30px 0;
+    flex-flow: column wrap;
   }
 
   .features-item {
