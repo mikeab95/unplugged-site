@@ -499,6 +499,7 @@ textarea {
     left: 0; 
   }
 
+
 /* ==========================================================================
    FAQ
    ========================================================================== */
@@ -816,12 +817,16 @@ textarea {
     align-items: flex-start;
     width: 50%;
   }
+
   .map {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .map figure {
-    padding-bottom: 50%;
+    max-width: 640px;
+    padding-bottom: 40%;
   }
 
   /* ==========================================================================
@@ -937,6 +942,7 @@ textarea {
    }
 
    .map figure {
+     max-width: 980px;
      padding-bottom: 25%;
    }
 
